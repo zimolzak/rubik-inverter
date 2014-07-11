@@ -1,26 +1,49 @@
 digraph {
 
+OCLL1	   -> OCLL2;
+OCLL2	   -> OCLL1;
+OCLL3	   -> OCLL3;
+OCLL4	   -> OCLL4;
+OCLL5	   -> OCLL6;
+OCLL6	   -> OCLL5;
+OCLL7	   -> OCLL6;
 OCLL8 	   -> OCLL8;
+
+E1	   -> E2;
+E2	   -> E2;
+
+
+P1	   -> T1;
+P2	   -> T2;
+
 P4	   -> L6;
+
+
+L1	   -> I4;
+L2	   -> I4;
 L3	   -> L3;
 L4	   -> L4;
+
 F1	   -> K3;
+
 A2	   -> P1;
 A4	   -> P2;
 A3	   -> P2;
-L3	   -> K2;
+
+Z3	   -> K2;
+
 T1	   -> P1;
-P1	   -> T1;
-P2	   -> T2;
-L1	   -> I4;
-L2	   -> I4;
-I4	   -> L1;
+
 C1	   -> P2;
 C2	   -> F4;
+
 I1	   -> L2;
 I2	   -> I2;
+I4	   -> L1;
+
 K3	   -> F1;
 K4	   -> F2;
+
 O1	   -> O2;
 O2	   -> O2;
 O3	   -> O4;
@@ -29,18 +52,5 @@ O5	   -> O7;
 O6	   -> O5;
 O7	   -> O5;
 O8	   -> O8;
-
-OCLL1	   -> OCLL2;
-OCLL2	   -> OCLL1;
-OCLL3	   -> OCLL3;
-OCLL4	   -> OCLL4;
-OCLL5	   -> OCLL6;
-OCLL6	   -> OCLL5;
-OCLL7	   -> OCLL6;
-
-E1	   -> E2;
-E2	   -> E2;
-
-
 
 }
