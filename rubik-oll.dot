@@ -30,6 +30,17 @@ O6	   -> O5;
 O7	   -> O5;
 O8	   -> O8;
 
+OCLL1	   -> OCLL2;
+OCLL2	   -> OCLL1;
+OCLL3	   -> OCLL3;
+OCLL4	   -> OCLL4;
+OCLL5	   -> OCLL6;
+OCLL6	   -> OCLL5;
+OCLL7	   -> OCLL6;
+
+E1	   -> E2;
+E2	   -> E2;
+
 
 
 }
