@@ -1,0 +1,19 @@
+F (R U R' U') F'
+F (R U R' U') (R U R' U') F'
+F (R U R' U') (R U R' U') (R U R' U') F'
+f (R U R' U') f'
+f (R U R' U') (R U R' U') f'
+f ' (L' U' L U) f
+F' (L' U' L U) (L' U' L U) F
+[F (R U R' U') F'] U [F (R U R' U') F' ]
+[F' (L' U' L U) F] y [F (R U R' U') F']
+[f (R U R' U') f'] U [F (R U R' U') F' ]
+[f (R U R' U') f'] U' [F (R U R' U') F' ]
+[F (R U R' U') F' ] [f (R U R' U') f']
+[f (R U R' U') f'] [F (R U R' U') F']
+(r U r') (R U R' U') (r U' r')
+(l' U' l) (L' U' L U) (l' U l)
+R' [F (R U R' U') F'] U R
+(R U R' U') M' (U R U' r')
+M U (R U R' U') M2 (U R U' r')
+F (R U R' U') R F' (r U R' U') r'
