@@ -58,13 +58,13 @@ my %inversion = (
     "z'"   => "z",
     );
 
-# print $invert{$x};
-
 while(<>){
     chomp;
-    s/([rludfbxyz]'?)/$1,/gi;
+    s/([rludfbxyz]'?)/$1,/gi; # Delimit with commas.
     s/,$//;
     my @move = split(",");
-    print join(" - ", @move) . "\n";
-    
+    while(my $m = pop @move){ # POP reverses order.
+	print $inversion{$m}
+    }
+    print "\n";
 }
