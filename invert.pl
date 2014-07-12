@@ -26,6 +26,10 @@ my %inversion = (
     "B'"  => "B",
     "B2"  => "B2",
 
+    "M"   => "M'",
+    "M'"  => "M",
+    "M2"  => "M2",
+
     "r"   => "r'",
     "r'"  => "r",
     "r2"  => "r2",
@@ -60,7 +64,8 @@ my %inversion = (
 
 while(<>){
     chomp;
-    s/([rludfbxyz]'?)/$1,/gi; # Delimit with commas.
+    s/[ ()\[\]]//g;
+    s/([rludfbmxyz]['2]*)/$1,/gi; # Delimit with commas.
     s/,$//;
     my @move = split(",");
     while(my $m = pop @move){ # POP reverses order.
